@@ -13,3 +13,5 @@ int main() {
 int countCharacter(string str) {
 	return str.length();
 }
+
+//Lmao
