@@ -8,7 +8,15 @@ using namespace std;
 int countVowel(string str);
 
 int main() {
-	cout << countVowel("abcdefghi");
+
+	string input;
+	
+	while (true) {
+		cout << "Enter a string or Q to quit: ";
+		getline(cin, input);
+		if (input == "Q") break;
+		cout << "Vowel Count: " << countVowel(input) << endl;
+	}
 }
 
 int countVowel(string str) {
